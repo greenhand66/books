@@ -18,3 +18,89 @@
 
 题目：爬楼梯
 链接：LeetCode - 爬楼梯
+=======================================================================
+
+
+以下是一些适合初级嵌入式工程师的学习列表和资源推荐：
+
+学习列表
+编程语言
+
+C语言：掌握C语言的基础语法和编程技巧。
+C++：学习面向对象编程和C++的高级特性。
+数据结构和算法
+
+数组和链表：理解基本的数据结构。
+排序和搜索算法：掌握常用的排序和搜索算法。
+数字电路和模拟电路
+
+基本电路原理：学习逻辑门、触发器等基础知识。
+电路设计与分析：掌握模拟电路的设计和分析方法。
+微控制器和单片机
+
+51单片机：入门级单片机的学习。
+STM32：高级单片机的编程和应用。
+嵌入式操作系统
+
+FreeRTOS：学习实时操作系统的基本概念和应用。
+RT-Thread：掌握另一种常用的嵌入式操作系统。
+接口和通信协议
+
+UART、SPI、I2C：学习常用的通信接口。
+CAN、USB、Ethernet：掌握常见的通信协议。
+硬件调试工具
+
+示波器：学习使用示波器进行信号分析。
+逻辑分析仪：掌握逻辑分析仪的使用方法。
+Linux基础
+
+Linux命令行：熟悉基本的Linux命令。
+Shell编程：学习编写Shell脚本。
+学习资源
+书籍
+
+《C程序设计语言》 - Brian W. Kernighan, Dennis M. Ritchie
+《嵌入式系统设计与实践》 - Michael J. Pont
+《深入理解计算机系统》 - Randal E. Bryant, David R. O'Hallaron
+在线课程
+
+Coursera - Embedded Systems
+edX - Embedded Systems
+
+博客和论坛
+https://www.cnblogs.com/-Donge/articles/17541576.html
+https://blog.csdn.net/dong__ge/article/details/131652653
+博客园 - 初级嵌入式软件工程师养成记1
+CSDN - 初级嵌入式软件工程师养成记2
+
+
+视频教程
+B站 - 初级嵌入式软件工程师养成记3
+https://www.bilibili.com/read/cv24913122/
+==================================================================
+
+以下是一些学习CAN、USB和Ethernet通信协议的资源链接：
+
+CAN（Controller Area Network）：
+
+资源：VectorNav - CAN通信接口1
+https://www.vectornav.com/resources/inertial-navigation-primer/hardware/commhw
+资源：Influx Big Data - CAN Bus VS Ethernet2
+https://www.influxbigdata.in/post/can-bus-vs-ethernet-protocol-simple-explanation
+
+USB（Universal Serial Bus）：
+资源：Vtech Insider - USB与CAN的比较3
+https://vtechinsider.com/usb-vs-can/
+资源：VectorNav - USB通信接口1
+https://www.vectornav.com/resources/inertial-navigation-primer/hardware/commhw
+
+Ethernet：
+资源：VectorNav - 工业以太网1
+https://www.vectornav.com/resources/inertial-navigation-primer/hardware/commhw
+
+
+
+
+
+
+
