@@ -15,3 +15,37 @@ https://ia601208.us.archive.org/16/items/themicrostudios_gmail_2007/%E7%BD%97%E4
 https://ia800309.us.archive.org/27/items/OutOfTheQuagmireOfObsessiveCompulsiveDisorder/%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8A%9B%E9%87%8F.pdf
 
 https://github.com/auspbro/ebook-c/blob/master/C%E5%92%8C%E6%8C%87%E9%92%88(%E7%AC%AC%E4%BA%8C%E7%89%88)%E9%AB%98%E6%B8%85%E5%85%A8%E7%89%88469%E9%A1%B5.pdf
+
+
+https://www.cnblogs.com/juzicode/p/15558310.html
+
+
+===============================================================
+获取 xdotool 安装包
+下载 xdotool 安装包：
+
+访问 xdotool 的 GitHub 页面。
+在页面中找到适合你操作系统的版本，并下载相应的安装包。
+离线安装 xdotool：
+
+将下载的安装包传输到目标计算机。
+在目标计算机上，使用以下命令进行安装（假设你下载的是 .deb 包）：
+sudo dpkg -i xdotool_<version>.deb
+如果有依赖问题，可以使用以下命令解决：
+sudo apt-get install -f
+获取 Tesseract OCR 安装包
+下载 Tesseract OCR 安装包：
+
+访问 Tesseract OCR 的 GitHub 页面。
+在页面中找到适合你操作系统的版本，并下载相应的安装包1。
+下载语言包：
+
+访问 Tesseract OCR 的语言包页面。
+下载所需的语言包（例如 chi_sim.traineddata 用于简体中文）。
+离线安装 Tesseract OCR：
+
+将下载的安装包和语言包传输到目标计算机。
+在目标计算机上，使用以下命令进行安装（假设你下载的是 .deb 包）：
+sudo dpkg -i tesseract-ocr_<version>.deb
+将语言包复制到 Tesseract 的 tessdata 目录中：
+sudo cp chi_sim.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
