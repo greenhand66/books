@@ -103,6 +103,12 @@ D时刻的车辆位置信息 -> 计算D时刻骨架区域的位置
 6变形
 
 
+RGB out time reduce
+问题描述：
+生产过程中Picture out(RGB out)的检验不在设计标准的1.9s内
+
+
+
 
 
 
