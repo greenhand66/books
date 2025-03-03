@@ -106,10 +106,97 @@ D时刻的车辆位置信息 -> 计算D时刻骨架区域的位置
 RGB out time reduce
 问题描述：
 生产过程中Picture out(RGB out)的检验不在设计标准的1.9s内
+结果：
+修改后将time 
+从2.04s -> 1.59s
+问题原因：
+OSD复制进程和ROMCheck 进程同时执行各自的FlashMemory进程同时执行各自的FlashMemory读取，FlashMemory 读取排除控制延长了OSD复制处理时间，这反过来又延长了第一次静音时间。
+解决方法：
+通过增加信号量和信号量等待时间，来解决task间的
 
 
+（RGB输出链接到“第一次静音关闭”过程）
+AVM内部时间戳：图像输出时间在1.2s以内，则图像输出时间在1.85s内
 
+=================
+ASPICE 
 
+ASPICE（Automotive SPICE）将汽车系统研发过程划分为多个过程域，每个过程域包含具体的过程活动。以下是ASPICE的主要过程及其简单说明：
+
+基础生命周期过程（Primary Life Cycle Processes）
+ACQ.3 合同协议（Contract Agreement）：
+
+确定并管理与供应商的合同协议。
+ACQ.4 供应商监控（Supplier Monitoring）：
+
+监控供应商的绩效，确保其按合同要求交付产品或服务。
+SYS.1 需求引出（Requirements Elicitation）：
+
+从客户和利益相关者处收集系统需求。
+SYS.2 系统需求分析（System Requirements Analysis）：
+
+分析和定义系统需求，确保其完整性和一致性。
+SYS.3 系统架构设计（System Architectural Design）：
+
+设计系统架构，定义系统各部分及其接口。
+SYS.4 系统集成和集成测试（System Integration and Integration Test）：
+
+集成系统各部分并进行集成测试，确保系统功能和性能。
+SYS.5 系统合格性测试（System Qualification Test）：
+
+验证系统是否满足所有系统需求。
+软件工程过程（Software Engineering Processes）
+SWE.1 软件需求分析（Software Requirements Analysis）：
+
+分析和定义软件需求，确保其完整性和一致性。
+SWE.2 软件架构设计（Software Architectural Design）：
+
+设计软件架构，定义软件各部分及其接口。
+SWE.3 软件详细设计和单元构建（Software Detailed Design and Unit Construction）：
+
+详细设计软件单元，并进行单元构建。
+SWE.4 软件单元验证（Software Unit Verification）：
+
+验证软件单元是否符合设计要求。
+SWE.5 软件集成和集成测试（Software Integration and Integration Test）：
+
+集成软件单元并进行集成测试，确保软件功能和性能。
+SWE.6 软件合格性测试（Software Qualification Testing）：
+
+验证集成的软件是否满足所有软件需求。
+支持生命周期过程（Supporting Life Cycle Processes）
+SUP.1 质量保证（Quality Assurance）：
+
+确保开发过程和产品符合质量标准。
+SUP.2 验证（Verification）：
+
+验证产品是否符合需求和设计规范。
+SUP.4 联合评审（Joint Review）：
+
+与利益相关者共同评审开发过程和产品。
+SUP.7 文档编制（Documentation）：
+
+编制和维护开发过程和产品的文档。
+SUP.8 配置管理（Configuration Management）：
+
+管理开发过程中的配置项，确保其一致性和可追溯性。
+SUP.9 问题解决管理（Problem Resolution Management）：
+
+识别、跟踪和解决开发过程中的问题。
+SUP.10 变更请求管理（Change Request Management）：
+
+管理变更请求，确保变更的有效性和可追溯性。
+组织生命周期过程（Organizational Life Cycle Processes）
+MAN.3 项目管理（Project Management）：
+
+计划、监控和控制项目，确保项目按时、按预算完成。
+PIM.3 过程改进（Process Improvement）：
+
+识别和实施过程改进措施，提升开发过程的效率和质量。
+REU.2 重用管理（Reuse Management）：
+
+管理和促进开发过程中组件和知识的重用。
+这些过程涵盖了从需求分析到设计、开发、测试、质量保证和项目管理的各个方面，确保软件开发过程的高质量和一致性。如果你有更多问题或需要进一步的解释，请随时告诉我！
 
 
 
