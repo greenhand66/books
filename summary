@@ -51,6 +51,8 @@ AD 使用的是SC3 级别（包含内存保护，调度表，OSEK OS）的AUTOSA
 
 
 
+
+
 相机
 sony 5600s(YCbCr -> YUV422bit)
 （索尼半导体解决方案公司（Sony Semiconductor Solutions Corporation, SSS）
@@ -123,6 +125,10 @@ skeleton view(透明底盘）功能介绍：
 功能原理：
 1）坐标系转换实现不同视角画面的呈现
 front camera 画面 -> skeleton 画面 映射关系的创建
+
+
+
+每隔12.5cm备份一帧图像
 
 
 1）当前备份图像和备份图像
